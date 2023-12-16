@@ -63,7 +63,7 @@ Task.updateById = (id, task, result) => {
       }
 
       if (res.affectedRows == 0) {
-        // not found employee with the id
+        // not found task with the id
         result({ kind: "not_found" }, null);
         return;
       }

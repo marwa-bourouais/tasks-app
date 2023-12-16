@@ -5,8 +5,7 @@ exports.findAll = (req, res) => {
   Task.getAll((err, data) => {
     if (err)
       res.status(500).send({
-        message:
-          err.message || "Some error occurred while retrieving employees.",
+        message: err.message || "Some error occurred while retrieving tasks.",
       });
     else res.send(data);
   });
